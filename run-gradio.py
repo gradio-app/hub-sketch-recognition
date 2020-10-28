@@ -24,5 +24,5 @@ description="This Convolution Neural Network was trained on Google's " \
             "QuickDraw dataset with 345 classes. Try it by drawing a " \
             "lightbulb, radio, or anything you can think of!"
 thumbnail="https://github.com/gradio-app/machine-learning-experiments/raw/master/lightbulb.png?raw=true"
-gr.Interface(predict, "sketchpad", output, live=True, title=title,
+gr.Interface(predict, "sketchpad", output, live=True, title=title, analytics_enabled=False,
              description=description, thumbnail=thumbnail, capture_session=True).launch()
